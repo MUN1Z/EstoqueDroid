@@ -9,7 +9,7 @@ package br.com.felipemuniz.estoquedroid.helper;
 public class Config {
 
     //Address of our scripts of the CRUD
-    public static final String URL_REGISTER="http://localhost/EstoqueDroid-WebService/_view/RegisterProduct.php";
+    public static final String URL_REGISTER="http://127.0.0.1/EstoqueDroid-WebService/_view/RegisterProduct.php";
     public static final String URL_VIEW_ALL = "";
     public static final String URL_VIEW_PRODUCT = "";
     public static final String URL_UPDATE = "";
