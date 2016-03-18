@@ -24,7 +24,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edtDescription" />
+        android:id="@+id/edtDescription"
+        android:inputType="textMultiLine" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,7 +35,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edtPrice" />
+        android:id="@+id/edtPrice"
+        android:inputType="numberDecimal" />
 
     <Button
         android:layout_width="match_parent"
