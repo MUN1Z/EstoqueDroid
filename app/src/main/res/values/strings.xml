@@ -5,4 +5,7 @@
     <string name="Price">Preço</string>
     <string name="Register_Product">Cadastrar Produto</string>
     <string name="View_Products">Ver Produtos</string>
+    <string name="id">ID</string>
+    <string name="Delete_product">Deletar Produto</string>
+    <string name="Update_Product">Atualizar Produto</string>
 </resources>
