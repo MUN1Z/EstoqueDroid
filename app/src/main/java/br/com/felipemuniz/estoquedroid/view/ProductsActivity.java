@@ -1,9 +1,12 @@
 package br.com.felipemuniz.estoquedroid.view;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -20,6 +23,7 @@ import br.com.felipemuniz.estoquedroid.helper.Config;
 import br.com.felipemuniz.estoquedroid.helper.RequestHandler;
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnItemClick;
 
 public class ProductsActivity extends AppCompatActivity {
 
@@ -98,4 +102,14 @@ public class ProductsActivity extends AppCompatActivity {
         GetJSON gj = new GetJSON();
         gj.execute();
     }
+
+    @OnItemClick(R.id.lstProducts)
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        Intent intent = new Intent(this, ProductActivity.class);
+        HashMap<String,String> map =(HashMap)parent.getItemAtPosition(position);
+        String empId = map.get(Config.TAG_ID).toString();
+        intent.putExtra(Config.EMP_ID,empId);
+        startActivity(intent);
+    }
+
 }

@@ -10,10 +10,10 @@ public class Config {
 
     //Address of our scripts of the CRUD
     public static final String URL_REGISTER="http://estoquedroid.kingsdeveloping.com.br/_view/RegisterProduct.php";
-    public static final String URL_GET_ALL = "http://estoquedroid.kingsdeveloping.com.br/_view/getProducts.php";
-    public static final String URL_VIEW_PRODUCT = "";
-    public static final String URL_UPDATE = "";
-    public static final String URL_DELETE = "";
+    public static final String URL_GET_ALL = "http://estoquedroid.kingsdeveloping.com.br/_view/GetProducts.php";
+    public static final String URL_GET_PRODUCT = "http://estoquedroid.kingsdeveloping.com.br/_view/GetProduct.php?id=";
+    public static final String URL_UPDATE = "http://estoquedroid.kingsdeveloping.com.br/_view/UpdateProduct.php?id=";
+    public static final String URL_DELETE = "http://estoquedroid.kingsdeveloping.com.br/_view/DeleteProduct.php?id=";
 
     //Keys that will be used to send the request to php scripts
     public static final String KEY_ID = "id";
