@@ -1,6 +1,7 @@
 package br.com.felipemuniz.estoquedroid.view;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -96,10 +97,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-//    @OnClick (R.id.btnView)
-//    public void mBtnView(View view){
-//        Intent mProducts = new Intent(this, ProductsActivity.class);
-//        startActivity(mProducts);
-//    }
+    @OnClick (R.id.btnView)
+    public void mBtnView(View view){
+        Intent mProducts = new Intent(this, ProductsActivity.class);
+        startActivity(mProducts);
+    }
 
 }
